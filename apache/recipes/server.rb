@@ -7,10 +7,12 @@
 
 package 'httpd'
 
-file '/var/www/html/index.html' do
-    content "<h1> Hello World </h1>
-    <h2>Hostname #{node['hostname']} </h2>
-    <h2>IpAddress #{node['ipaddress']} </h2>"
+template '/var/www/html/index.html' do
+    source 'display.erb'
+    variables(
+        :name => 'Himanshu'
+    )
+    action :create
 end
 
 service 'httpd' do

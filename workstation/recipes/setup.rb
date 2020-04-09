@@ -1,5 +1,4 @@
-#Setup cook book
-#
+#Setup workstation cook book
 
 package 'neovim'
 package 'vim-enhanced'
@@ -15,5 +14,8 @@ end
 
 template '/etc/motd' do
     source 'motd.erb'
+    variables(
+        :name => 'Himanshu'
+    )
     action :create
 end

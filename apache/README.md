@@ -1,4 +1,7 @@
-# apache
+# Apache Webserver Install
 
-TODO: Enter the cookbook description here.
+Installs Apache **httpd** server using chef.
+Creates  `/var/www/html/index.html` file to display.
+Runs the apache httpd demon on port 80.
+
 

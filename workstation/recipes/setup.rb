@@ -12,3 +12,8 @@ package 'fish'
 service 'ntpd' do
     action [ :enable, :start ]
 end
+
+template '/etc/motd' do
+    source 'motd.erb'
+    action :create
+end

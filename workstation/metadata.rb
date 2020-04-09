@@ -1,10 +1,10 @@
-name 'worstation'
+name 'workstation'
 maintainer 'Himanshu'
 maintainer_email 'himorithm@gmail.com'
 license 'All Rights Reserved'
 description 'Installs/Configures worstation'
 long_description 'Installs/Configures worstation'
-version '0.1.1'
+version '0.1.2'
 chef_version '>= 14.0'
 
 # The `issues_url` points to the location where issues for this cookbook are
